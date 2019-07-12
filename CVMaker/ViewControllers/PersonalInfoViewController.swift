@@ -32,13 +32,18 @@ class PersonalInfoViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
     
-    func initialSetup(){
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadViewData()
+    }
+    
+    private func initialSetup(){
         personalInfoViewModel = PersonalInfoViewModel()
         self.navigationItem.title = "Personal Information"
         setLeftNavigationItem(title: "Back")
     }
     
-    func setupTextFieldUI(){
+    private func setupTextFieldUI(){
         Utility.sharedInstance.customizeTextField(textField: firstNameTextField)
         Utility.sharedInstance.customizeTextField(textField: lastNameTextField)
         Utility.sharedInstance.customizeTextField(textField: dobTextField)
@@ -48,7 +53,7 @@ class PersonalInfoViewController: BaseViewController {
         Utility.sharedInstance.customizeTextField(textField: address2TextField)
     }
 
-    func saveData() {
+    private func saveData() {
         
         personalInfoViewModel?.firstName = firstNameTextField.text
         personalInfoViewModel?.lastName = lastNameTextField.text
@@ -63,6 +68,24 @@ class PersonalInfoViewController: BaseViewController {
         self.navigationController?.popViewController(animated: true)
         
     }
+    
+    func loadViewData(){
+        if var personalInfoViewModel = personalInfoViewModel{
+            personalInfoViewModel.loadData()
+            updateTextFields(personalInfoViewModel: personalInfoViewModel)
+        }
+    }
+    
+    private func updateTextFields(personalInfoViewModel : PersonalInfoViewModel){
+        firstNameTextField.text = personalInfoViewModel.firstName
+        lastNameTextField.text = personalInfoViewModel.lastName
+        mobileTextField.text = personalInfoViewModel.mobileNumber
+        address1TextField.text = personalInfoViewModel.address1
+        address2TextField.text = personalInfoViewModel.address2
+        emailTextField.text = personalInfoViewModel.emailID
+        dobTextField.text = personalInfoViewModel.dob
+    }
+
 }
 
 extension PersonalInfoViewController : saveProtocol{

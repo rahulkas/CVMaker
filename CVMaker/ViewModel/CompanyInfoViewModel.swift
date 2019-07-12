@@ -25,6 +25,8 @@ struct CompanyInfoViewModel {
         ModelClasses.sharedInstance.currentCompanyDetailsObject.designation = designation ?? ""
         ModelClasses.sharedInstance.currentCompanyDetailsObject.experience = experience ?? ""
         
-        companyDetailArray.append(ModelClasses.sharedInstance.currentCompanyDetailsObject)
+        //Converting to Dictionary for saving
+        let companyDictionary = ModelClasses.sharedInstance.getCurrentCompanyDetailsDict(company:ModelClasses.sharedInstance.currentCompanyDetailsObject )
+        companyDetailArray.append(companyDictionary)
     }
 }

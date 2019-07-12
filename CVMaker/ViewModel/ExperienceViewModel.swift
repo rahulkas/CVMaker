@@ -28,6 +28,9 @@ struct ExperienceViewModel {
         ModelClasses.sharedInstance.experinceDetailsObject.startDate = startDate ?? ""
         ModelClasses.sharedInstance.experinceDetailsObject.endDate = endDate ?? ""
         ModelClasses.sharedInstance.experinceDetailsObject.technology = technology ?? ""
-        experinceDetailArray.append(ModelClasses.sharedInstance.educationalInfoObject)
+        
+        //Converting to Dictionary for saving
+        let experinceDictionary = ModelClasses.sharedInstance.getProjectDetailsDict(experince: ModelClasses.sharedInstance.experinceDetailsObject)
+        experinceDetailArray.append(experinceDictionary)
     }
 }

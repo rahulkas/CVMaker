@@ -8,15 +8,17 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     @IBOutlet weak var homeTableView: UITableView!
     
     var homeViewArray : [String]?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Home"
+        self.navigationItem.title = "Dashboard"
+        setRightNavigationItem(title: "Save")
         homeTableView.delegate = self
         homeTableView.dataSource = self
+        saveDelegate = self
         
         homeViewArray = ["Personal Details", "Education", "Project Details","Current Company/ Past Company", "Expertise Skills"]
         // Do any additional setup after loading the view.
@@ -46,6 +48,38 @@ class HomeViewController: UIViewController {
             print("Default")
         }
     }
+    //Saving data to server
+    private func finalSave()
+    {
+        var url:URL
+        
+        url = Utility.sharedInstance.getDocumentsDirectory()
+        
+        //Calling network methods for save
+        NetworkManager.sharedInstance.requestForWriting(url: url, dataDict: ResumeDataModel.sharedInstance.getResumeDataDictionary(), completionHandlers:({(data:[String:Any]?,url:URLResponse?,error:Error?) in
+            
+            if let _ = error{
+                print("Error while Saving")
+                Utility.sharedInstance.showAlert(title: "Error", msg: "Error while Saving")
+            }
+            else{
+                Utility.sharedInstance.showAlert(title: "Success", msg: "Data Saved Successfully")
+                
+            }
+        }))
+    }
+}
+
+extension HomeViewController : saveProtocol{
+    func saveObject() {
+        
+    }
+    
+    func writeToUrl() {
+        finalSave()
+    }
+    
+    
 }
 
 extension HomeViewController : UITableViewDataSource{

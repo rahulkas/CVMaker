@@ -25,6 +25,9 @@ struct EducationInfoViewModel {
         ModelClasses.sharedInstance.educationalInfoObject.courseName = courseName ?? ""
         ModelClasses.sharedInstance.educationalInfoObject.fromDate = fromDate ?? ""
         ModelClasses.sharedInstance.educationalInfoObject.toDate = toDate ?? ""
-        educationDetailArray.append(ModelClasses.sharedInstance.educationalInfoObject)
+        
+        //Converting to Dictionary for saving
+        let educationDictionary = ModelClasses.sharedInstance.getEducationalInfoDict(educationalInfo: ModelClasses.sharedInstance.educationalInfoObject)
+        educationDetailArray.append(educationDictionary)
     }
 }

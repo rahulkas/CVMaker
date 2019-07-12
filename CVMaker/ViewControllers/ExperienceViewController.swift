@@ -69,7 +69,7 @@ class ExperienceViewController: BaseViewController {
 
 extension ExperienceViewController : saveProtocol{
     func saveObject() {
-        
+        saveExperienceData()
     }
     
     func writeToUrl() {
@@ -97,7 +97,8 @@ extension ExperienceViewController : UITableViewDelegate{
 
 extension ExperienceViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return cellCount
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

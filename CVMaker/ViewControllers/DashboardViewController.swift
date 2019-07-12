@@ -12,9 +12,8 @@ class DashboardViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Dashboard"
-        saveDelegate = self
-        setRightNavigationItem(title: "Save")
+        self.navigationItem.title = "Home"
+        
         // Do any additional setup after loading the view.
     }
     
@@ -24,37 +23,5 @@ class DashboardViewController: BaseViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
     }
-    //Saving data to server
-    private func finalSave()
-    {
-        var url:URL
-        
-        url = Utility.sharedInstance.getDocumentsDirectory()
-        
-        //Calling network methods for save
-        NetworkManager.sharedInstance.requestForWriting(url: url, dataDict: ResumeDataModel.sharedInstance.getResumeDataDictionary(), completionHandlers:({(data:[String:Any]?,url:URLResponse?,error:Error?) in
-            
-            if let _ = error{
-                print("Error while Saving")
-                Utility.sharedInstance.showAlert(title: "Error", msg: "Error while Saving")
-            }
-            else{
-                Utility.sharedInstance.showAlert(title: "Success", msg: "Data Saved Successfully")
-                
-            }
-        }))
-    }
-}
-
-extension DashboardViewController : saveProtocol{
-    func saveObject() {
-        
-    }
-    
-    func writeToUrl() {
-        finalSave()
-    }
-    
-    
 }
 

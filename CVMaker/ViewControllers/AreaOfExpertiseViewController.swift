@@ -66,6 +66,7 @@ class AreaOfExpertiseViewController: BaseViewController {
         
         areaOfexpertiseModel?.aditionalInformation = aditionalInformation.text
         
+        areaOfexpertiseModel?.saveData()
         self.navigationController?.popViewController(animated: true)
     }
 

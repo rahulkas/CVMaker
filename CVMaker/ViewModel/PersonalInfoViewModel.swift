@@ -31,5 +31,24 @@ struct PersonalInfoViewModel {
         ModelClasses.sharedInstance.personalInfoObject.address1 = address1 ?? ""
         ModelClasses.sharedInstance.personalInfoObject.address2 = address2 ?? ""
         ModelClasses.sharedInstance.personalInfoObject.dob  = dob ?? ""
+        
+        //Converting to Dict for saving
+        ResumeDataModel.sharedInstance.personalInfo = ModelClasses.sharedInstance.getPersonalInfoDict()
+    }
+    
+    mutating func loadData(){
+        
+        //Loading data from retrieved URL data
+        
+        ModelClasses.sharedInstance.personalInfoObject = ModelClasses.sharedInstance.setPersonalInfoDict(data: ResumeDataModel.sharedInstance.personalInfo)
+        
+        firstName = ModelClasses.sharedInstance.personalInfoObject.firstName
+        lastName = ModelClasses.sharedInstance.personalInfoObject.lastName
+        mobileNumber = ModelClasses.sharedInstance.personalInfoObject.phoneNumber
+        emailID = ModelClasses.sharedInstance.personalInfoObject.emailId
+        address1 = ModelClasses.sharedInstance.personalInfoObject.address1
+        address2 = ModelClasses.sharedInstance.personalInfoObject.address2
+        dob = ModelClasses.sharedInstance.personalInfoObject.dob
+        
     }
 }
