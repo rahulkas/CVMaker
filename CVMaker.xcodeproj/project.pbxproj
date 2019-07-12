@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A75D5AD22D85B25002ADD85 /* ExperienceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75D5AC22D85B25002ADD85 /* ExperienceViewModel.swift */; };
+		5A75D5AF22D8667B002ADD85 /* CompanyInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75D5AE22D8667B002ADD85 /* CompanyInfoViewModel.swift */; };
+		5A75D5B122D894A0002ADD85 /* AreaOfExpertiseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75D5B022D894A0002ADD85 /* AreaOfExpertiseModel.swift */; };
+		5A75D5B322D89500002ADD85 /* ResumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A75D5B222D89500002ADD85 /* ResumeModel.swift */; };
+		5AA1676522D077CC00A36905 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1676422D077CC00A36905 /* AppDelegate.swift */; };
+		5AA1676722D077CC00A36905 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1676622D077CC00A36905 /* BaseViewController.swift */; };
+		5AA1676A22D077CC00A36905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA1676822D077CC00A36905 /* Main.storyboard */; };
+		5AA1676C22D077CD00A36905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA1676B22D077CD00A36905 /* Assets.xcassets */; };
+		5AA1676F22D077CD00A36905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA1676D22D077CD00A36905 /* LaunchScreen.storyboard */; };
+		5AA1677A22D077CD00A36905 /* CVMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1677922D077CD00A36905 /* CVMakerTests.swift */; };
+		5AA1678522D077CD00A36905 /* CVMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1678422D077CD00A36905 /* CVMakerUITests.swift */; };
+		5AA1679322D07A1200A36905 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1679222D07A1200A36905 /* DashboardViewController.swift */; };
+		5AA1679522D07A3A00A36905 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1679422D07A3A00A36905 /* HomeViewController.swift */; };
+		5AA1679722D07A6C00A36905 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1679622D07A6C00A36905 /* PersonalInfoViewController.swift */; };
+		5AA1679922D07D7F00A36905 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1679822D07D7F00A36905 /* HomeTableViewCell.swift */; };
+		5AA1679B22D08F7A00A36905 /* EducationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1679A22D08F7A00A36905 /* EducationTableViewCell.swift */; };
+		5AA1679D22D08FE300A36905 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1679C22D08FE300A36905 /* EducationViewController.swift */; };
+		5AA1679F22D09C1500A36905 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1679E22D09C1500A36905 /* ExperienceViewController.swift */; };
+		5AA167A122D09C4A00A36905 /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA167A022D09C4A00A36905 /* ExperienceTableViewCell.swift */; };
+		5AA167A422D0A31F00A36905 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA167A322D0A31F00A36905 /* Constant.swift */; };
+		5AA167A622D0BDF300A36905 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA167A522D0BDF300A36905 /* CompanyViewController.swift */; };
+		5AA167A822D0BE1300A36905 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA167A722D0BE1300A36905 /* CompanyTableViewCell.swift */; };
+		5AA167AC22D0BEF400A36905 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA167AB22D0BEF400A36905 /* Utility.swift */; };
+		5ABD62E722D5869F0094024D /* AreaOfExpertiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD62E622D5869F0094024D /* AreaOfExpertiseViewController.swift */; };
+		5ABD62EA22D5FE980094024D /* ModelClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD62E922D5FE980094024D /* ModelClasses.swift */; };
+		5ABD62EE22D600B60094024D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD62EC22D600B60094024D /* NetworkManager.swift */; };
+		5ABD62EF22D600B60094024D /* NetworkRequestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD62ED22D600B60094024D /* NetworkRequestClass.swift */; };
+		5ABD62F222D7397A0094024D /* PersonalInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD62F122D7397A0094024D /* PersonalInfoViewModel.swift */; };
+		5ABD633022D750F60094024D /* EducationInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABD632F22D750F60094024D /* EducationInfoViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AA1677622D077CD00A36905 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AA1675922D077CC00A36905 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA1676022D077CC00A36905;
+			remoteInfo = CVMaker;
+		};
+		5AA1678122D077CD00A36905 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AA1675922D077CC00A36905 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA1676022D077CC00A36905;
+			remoteInfo = CVMaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A75D5AC22D85B25002ADD85 /* ExperienceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewModel.swift; sourceTree = "<group>"; };
+		5A75D5AE22D8667B002ADD85 /* CompanyInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfoViewModel.swift; sourceTree = "<group>"; };
+		5A75D5B022D894A0002ADD85 /* AreaOfExpertiseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaOfExpertiseModel.swift; sourceTree = "<group>"; };
+		5A75D5B222D89500002ADD85 /* ResumeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeModel.swift; sourceTree = "<group>"; };
+		5AA1676122D077CC00A36905 /* CVMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA1676422D077CC00A36905 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5AA1676622D077CC00A36905 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5AA1676922D077CC00A36905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AA1676B22D077CD00A36905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AA1676E22D077CD00A36905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5AA1677022D077CD00A36905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA1677522D077CD00A36905 /* CVMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA1677922D077CD00A36905 /* CVMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVMakerTests.swift; sourceTree = "<group>"; };
+		5AA1677B22D077CD00A36905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA1678022D077CD00A36905 /* CVMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA1678422D077CD00A36905 /* CVMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVMakerUITests.swift; sourceTree = "<group>"; };
+		5AA1678622D077CD00A36905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA1679222D07A1200A36905 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		5AA1679422D07A3A00A36905 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5AA1679622D07A6C00A36905 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		5AA1679822D07D7F00A36905 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		5AA1679A22D08F7A00A36905 /* EducationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationTableViewCell.swift; sourceTree = "<group>"; };
+		5AA1679C22D08FE300A36905 /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		5AA1679E22D09C1500A36905 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		5AA167A022D09C4A00A36905 /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
+		5AA167A322D0A31F00A36905 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5AA167A522D0BDF300A36905 /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		5AA167A722D0BE1300A36905 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		5AA167AB22D0BEF400A36905 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		5ABD62E622D5869F0094024D /* AreaOfExpertiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaOfExpertiseViewController.swift; sourceTree = "<group>"; };
+		5ABD62E922D5FE980094024D /* ModelClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClasses.swift; sourceTree = "<group>"; };
+		5ABD62EC22D600B60094024D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5ABD62ED22D600B60094024D /* NetworkRequestClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestClass.swift; sourceTree = "<group>"; };
+		5ABD62F122D7397A0094024D /* PersonalInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewModel.swift; sourceTree = "<group>"; };
+		5ABD632F22D750F60094024D /* EducationInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationInfoViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AA1675E22D077CC00A36905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1677222D077CD00A36905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1677D22D077CD00A36905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AA1675822D077CC00A36905 = {
+			isa = PBXGroup;
+			children = (
+				5AA1676322D077CC00A36905 /* CVMaker */,
+				5AA1677822D077CD00A36905 /* CVMakerTests */,
+				5AA1678322D077CD00A36905 /* CVMakerUITests */,
+				5AA1676222D077CC00A36905 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AA1676222D077CC00A36905 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1676122D077CC00A36905 /* CVMaker.app */,
+				5AA1677522D077CD00A36905 /* CVMakerTests.xctest */,
+				5AA1678022D077CD00A36905 /* CVMakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AA1676322D077CC00A36905 /* CVMaker */ = {
+			isa = PBXGroup;
+			children = (
+				5ABD62F022D739640094024D /* ViewModel */,
+				5ABD62EB22D600B60094024D /* NetworkManager */,
+				5ABD62E822D5FE6D0094024D /* Model */,
+				5AA167AA22D0BE5800A36905 /* TableViewCell */,
+				5AA167A922D0BE4B00A36905 /* ViewControllers */,
+				5AA167A222D0A30800A36905 /* Utility */,
+				5AA1676422D077CC00A36905 /* AppDelegate.swift */,
+				5AA1676822D077CC00A36905 /* Main.storyboard */,
+				5AA1676B22D077CD00A36905 /* Assets.xcassets */,
+				5AA1676D22D077CD00A36905 /* LaunchScreen.storyboard */,
+				5AA1677022D077CD00A36905 /* Info.plist */,
+			);
+			path = CVMaker;
+			sourceTree = "<group>";
+		};
+		5AA1677822D077CD00A36905 /* CVMakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1677922D077CD00A36905 /* CVMakerTests.swift */,
+				5AA1677B22D077CD00A36905 /* Info.plist */,
+			);
+			path = CVMakerTests;
+			sourceTree = "<group>";
+		};
+		5AA1678322D077CD00A36905 /* CVMakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1678422D077CD00A36905 /* CVMakerUITests.swift */,
+				5AA1678622D077CD00A36905 /* Info.plist */,
+			);
+			path = CVMakerUITests;
+			sourceTree = "<group>";
+		};
+		5AA167A222D0A30800A36905 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5AA167A322D0A31F00A36905 /* Constant.swift */,
+				5AA167AB22D0BEF400A36905 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5AA167A922D0BE4B00A36905 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1676622D077CC00A36905 /* BaseViewController.swift */,
+				5AA1679222D07A1200A36905 /* DashboardViewController.swift */,
+				5AA1679422D07A3A00A36905 /* HomeViewController.swift */,
+				5AA1679622D07A6C00A36905 /* PersonalInfoViewController.swift */,
+				5AA1679C22D08FE300A36905 /* EducationViewController.swift */,
+				5AA1679E22D09C1500A36905 /* ExperienceViewController.swift */,
+				5AA167A522D0BDF300A36905 /* CompanyViewController.swift */,
+				5ABD62E622D5869F0094024D /* AreaOfExpertiseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5AA167AA22D0BE5800A36905 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1679822D07D7F00A36905 /* HomeTableViewCell.swift */,
+				5AA1679A22D08F7A00A36905 /* EducationTableViewCell.swift */,
+				5AA167A022D09C4A00A36905 /* ExperienceTableViewCell.swift */,
+				5AA167A722D0BE1300A36905 /* CompanyTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		5ABD62E822D5FE6D0094024D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5ABD62E922D5FE980094024D /* ModelClasses.swift */,
+				5A75D5B222D89500002ADD85 /* ResumeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5ABD62EB22D600B60094024D /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				5ABD62EC22D600B60094024D /* NetworkManager.swift */,
+				5ABD62ED22D600B60094024D /* NetworkRequestClass.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		5ABD62F022D739640094024D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5ABD62F122D7397A0094024D /* PersonalInfoViewModel.swift */,
+				5ABD632F22D750F60094024D /* EducationInfoViewModel.swift */,
+				5A75D5AC22D85B25002ADD85 /* ExperienceViewModel.swift */,
+				5A75D5AE22D8667B002ADD85 /* CompanyInfoViewModel.swift */,
+				5A75D5B022D894A0002ADD85 /* AreaOfExpertiseModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AA1676022D077CC00A36905 /* CVMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA1678922D077CD00A36905 /* Build configuration list for PBXNativeTarget "CVMaker" */;
+			buildPhases = (
+				5AA1675D22D077CC00A36905 /* Sources */,
+				5AA1675E22D077CC00A36905 /* Frameworks */,
+				5AA1675F22D077CC00A36905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CVMaker;
+			productName = CVMaker;
+			productReference = 5AA1676122D077CC00A36905 /* CVMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AA1677422D077CD00A36905 /* CVMakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA1678C22D077CD00A36905 /* Build configuration list for PBXNativeTarget "CVMakerTests" */;
+			buildPhases = (
+				5AA1677122D077CD00A36905 /* Sources */,
+				5AA1677222D077CD00A36905 /* Frameworks */,
+				5AA1677322D077CD00A36905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AA1677722D077CD00A36905 /* PBXTargetDependency */,
+			);
+			name = CVMakerTests;
+			productName = CVMakerTests;
+			productReference = 5AA1677522D077CD00A36905 /* CVMakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5AA1677F22D077CD00A36905 /* CVMakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA1678F22D077CD00A36905 /* Build configuration list for PBXNativeTarget "CVMakerUITests" */;
+			buildPhases = (
+				5AA1677C22D077CD00A36905 /* Sources */,
+				5AA1677D22D077CD00A36905 /* Frameworks */,
+				5AA1677E22D077CD00A36905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AA1678222D077CD00A36905 /* PBXTargetDependency */,
+			);
+			name = CVMakerUITests;
+			productName = CVMakerUITests;
+			productReference = 5AA1678022D077CD00A36905 /* CVMakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AA1675922D077CC00A36905 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Rahul Kashyap";
+				TargetAttributes = {
+					5AA1676022D077CC00A36905 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					5AA1677422D077CD00A36905 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 5AA1676022D077CC00A36905;
+					};
+					5AA1677F22D077CD00A36905 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 5AA1676022D077CC00A36905;
+					};
+				};
+			};
+			buildConfigurationList = 5AA1675C22D077CC00A36905 /* Build configuration list for PBXProject "CVMaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AA1675822D077CC00A36905;
+			productRefGroup = 5AA1676222D077CC00A36905 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AA1676022D077CC00A36905 /* CVMaker */,
+				5AA1677422D077CD00A36905 /* CVMakerTests */,
+				5AA1677F22D077CD00A36905 /* CVMakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AA1675F22D077CC00A36905 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA1676F22D077CD00A36905 /* LaunchScreen.storyboard in Resources */,
+				5AA1676C22D077CD00A36905 /* Assets.xcassets in Resources */,
+				5AA1676A22D077CC00A36905 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1677322D077CD00A36905 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1677E22D077CD00A36905 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AA1675D22D077CC00A36905 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA167AC22D0BEF400A36905 /* Utility.swift in Sources */,
+				5AA1679922D07D7F00A36905 /* HomeTableViewCell.swift in Sources */,
+				5ABD62E722D5869F0094024D /* AreaOfExpertiseViewController.swift in Sources */,
+				5AA1679B22D08F7A00A36905 /* EducationTableViewCell.swift in Sources */,
+				5AA1676722D077CC00A36905 /* BaseViewController.swift in Sources */,
+				5A75D5AF22D8667B002ADD85 /* CompanyInfoViewModel.swift in Sources */,
+				5AA1679F22D09C1500A36905 /* ExperienceViewController.swift in Sources */,
+				5AA1679D22D08FE300A36905 /* EducationViewController.swift in Sources */,
+				5ABD62EF22D600B60094024D /* NetworkRequestClass.swift in Sources */,
+				5AA1679322D07A1200A36905 /* DashboardViewController.swift in Sources */,
+				5AA1679722D07A6C00A36905 /* PersonalInfoViewController.swift in Sources */,
+				5AA167A822D0BE1300A36905 /* CompanyTableViewCell.swift in Sources */,
+				5ABD62EE22D600B60094024D /* NetworkManager.swift in Sources */,
+				5AA167A122D09C4A00A36905 /* ExperienceTableViewCell.swift in Sources */,
+				5AA167A622D0BDF300A36905 /* CompanyViewController.swift in Sources */,
+				5ABD62EA22D5FE980094024D /* ModelClasses.swift in Sources */,
+				5A75D5AD22D85B25002ADD85 /* ExperienceViewModel.swift in Sources */,
+				5ABD633022D750F60094024D /* EducationInfoViewModel.swift in Sources */,
+				5AA167A422D0A31F00A36905 /* Constant.swift in Sources */,
+				5AA1676522D077CC00A36905 /* AppDelegate.swift in Sources */,
+				5AA1679522D07A3A00A36905 /* HomeViewController.swift in Sources */,
+				5A75D5B122D894A0002ADD85 /* AreaOfExpertiseModel.swift in Sources */,
+				5A75D5B322D89500002ADD85 /* ResumeModel.swift in Sources */,
+				5ABD62F222D7397A0094024D /* PersonalInfoViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1677122D077CD00A36905 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA1677A22D077CD00A36905 /* CVMakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1677C22D077CD00A36905 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA1678522D077CD00A36905 /* CVMakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AA1677722D077CD00A36905 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA1676022D077CC00A36905 /* CVMaker */;
+			targetProxy = 5AA1677622D077CD00A36905 /* PBXContainerItemProxy */;
+		};
+		5AA1678222D077CD00A36905 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA1676022D077CC00A36905 /* CVMaker */;
+			targetProxy = 5AA1678122D077CD00A36905 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5AA1676822D077CC00A36905 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AA1676922D077CC00A36905 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5AA1676D22D077CD00A36905 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AA1676E22D077CD00A36905 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AA1678722D077CD00A36905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5AA1678822D077CD00A36905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AA1678A22D077CD00A36905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CVMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.CVMaker.CVMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AA1678B22D077CD00A36905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CVMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.CVMaker.CVMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5AA1678D22D077CD00A36905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CVMakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.CVMaker.CVMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CVMaker.app/CVMaker";
+			};
+			name = Debug;
+		};
+		5AA1678E22D077CD00A36905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CVMakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.CVMaker.CVMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CVMaker.app/CVMaker";
+			};
+			name = Release;
+		};
+		5AA1679022D077CD00A36905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CVMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.CVMaker.CVMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CVMaker;
+			};
+			name = Debug;
+		};
+		5AA1679122D077CD00A36905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CVMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.CVMaker.CVMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CVMaker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AA1675C22D077CC00A36905 /* Build configuration list for PBXProject "CVMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA1678722D077CD00A36905 /* Debug */,
+				5AA1678822D077CD00A36905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AA1678922D077CD00A36905 /* Build configuration list for PBXNativeTarget "CVMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA1678A22D077CD00A36905 /* Debug */,
+				5AA1678B22D077CD00A36905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AA1678C22D077CD00A36905 /* Build configuration list for PBXNativeTarget "CVMakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA1678D22D077CD00A36905 /* Debug */,
+				5AA1678E22D077CD00A36905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AA1678F22D077CD00A36905 /* Build configuration list for PBXNativeTarget "CVMakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA1679022D077CD00A36905 /* Debug */,
+				5AA1679122D077CD00A36905 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AA1675922D077CC00A36905 /* Project object */;
+}
